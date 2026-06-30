@@ -74,3 +74,12 @@ addLootBtn.addEventListener("click", function () {
   lootName.value = "";
   lootValue.value = "";
 });
+
+/*
+BELOW IS THE DEBUGGING REFLECTION:
+I placed a breakpoint inside the event listener. Before clicking the button,
+the loot array was empty. After clicking, the array updated immediately with
+the new object. The interface updated only AFTER the array mutation and AFTER
+the loops have finished with rendering the list and total. From a systems thinking perspective, the state changed first,
+then the screen updated.
+*/
