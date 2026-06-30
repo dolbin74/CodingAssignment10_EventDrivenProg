@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rate This Recipe</title>
+</head>
+
+<body>
+
+<h1>Rate This Recipe</h1>
+
+<p>Select a rating:</p>
+
+<select id="rating">
+  <option value="">Choose…</option>
+  <option value="1">1 - Bad</option>
+  <option value="2">2 - Okay</option>
+  <option value="3">3 - Good</option>
+  <option value="4">4 - Great</option>
+  <option value="5">5 - Amazing</option>
+</select>
+
+<button onclick="showRating()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function showRating() {
+  let rating = document.getElementById("rating").value;
+  document.getElementById("result").textContent =
+    "You rated this recipe: " + rating;
+}
+</script>
+
+</body>
+</html>
